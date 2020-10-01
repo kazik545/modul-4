@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+header .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .row .menu ul li {
+  display: inline;
+  margin-right: 40px;
+}
+/*# sourceMappingURL=style.css.map */
