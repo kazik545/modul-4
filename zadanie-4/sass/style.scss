@@ -11,9 +11,38 @@ $font-four: 'Piazzolla', serif;
 body {
     margin: 0;
     font-family: $font-two;
+    text-align: center;
 }
 a {
     text-decoration: none;
+}
+.title {
+    font-family: $font-two;
+    font-weight: 700;
+    color: $color-three;
+    font-size: 40px;
+}
+.sub-title {
+    font-family: $font-one;
+    color: $color-four;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+.title-small {
+    font-size: 18px;
+}
+.sub-title-small {
+    font-size: 14px;
+}
+i {
+    font-size: 40px;
+    border: 3px solid $color-two;
+    color: $color-two;
+    border-radius: 50%;
+    padding: 14px;
+    p {
+        display: none;
+    }
 }
 /*Header*/
 header {
@@ -28,14 +57,12 @@ header {
         color: $color-one;
         font-size: 40px;
         letter-spacing: 3px;
-        text-align: center;
     }
     .second-header {
         font-family: $font-two;
         color: $color-one;
         font-size: 75px;
         font-weight: 700;
-        text-align: center;
     }
     .btn {
         position: relative;
