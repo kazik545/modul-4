@@ -1,19 +1,87 @@
+/*Variables*/
+$color-one: #ffffff;
+$color-two: #fed136;
+$color-three: #222222;
+$color-four: #777777;
+$font-one: 'Shadows Into Light', cursive;
+$font-two: 'Montserrat', sans-serif;
+$font-three: 'Roboto Slab', serif;
+$font-four: 'Piazzolla', serif;
+/*Global*/
 body {
     margin: 0;
+    font-family: $font-two;
 }
+a {
+    text-decoration: none;
+}
+/*Header*/
 header {
-    background-image: url('../images/background.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     height: 700px;    
+    .first-header {
+        font-family: $font-one;
+        color: $color-one;
+        font-size: 40px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .second-header {
+        font-family: $font-two;
+        color: $color-one;
+        font-size: 75px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .btn {
+        position: relative;
+        background-color: $color-two;
+        margin: 0 auto;
+        width: 240px;
+        height: 65px;
+        border-radius: 2%;
+        a {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            font-size: 18px;
+            font-family: $font-two;
+            color: $color-one;
+            font-weight: 700;
+        }
+    }
     .row {
         justify-content: space-around;
+        .logo {
+            h2 {
+                font-family: $font-four;
+                font-size: 26px;
+                font-weight: 400;
+                color: $color-two;
+                font-style: italic;
+                margin-top: 18px;
+                padding: 0;
+            }
+        }
         .menu {
+            margin-top: 30px;
             ul {
+                margin: 0;
                 li {
                     display: inline;
                     margin-right: 40px;
+                    a{
+                        font-family: $font-two;
+                        color: $color-one
+                    }
                 }
             }
         }
