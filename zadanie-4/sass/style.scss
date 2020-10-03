@@ -21,7 +21,8 @@ a {
     font-weight: 700;
     color: $color-three;
     font-size: 40px;
-    margin-top: 60px;
+    padding-top: 80px;
+    margin: 0;
 }
 .sub-title {
     font-family: $font-one;
@@ -32,7 +33,6 @@ a {
 }
 .title-small {
     font-size: 18px;
-    margin-top: 30px;
 }
 .sub-title-small {
     font-size: 14px;
@@ -151,6 +151,7 @@ header {
 /* Portfolio */
 .portfolio {
     background-color: #f7f7f7;
+    padding-bottom: 80px;
 }
 /* Footer */ 
 footer {
