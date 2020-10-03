@@ -21,15 +21,18 @@ a {
     font-weight: 700;
     color: $color-three;
     font-size: 40px;
+    margin-top: 60px;
 }
 .sub-title {
     font-family: $font-one;
     color: $color-four;
     font-size: 16px;
     letter-spacing: 4px;
+    margin-bottom: 60px;
 }
 .title-small {
     font-size: 18px;
+    margin-top: 30px;
 }
 .sub-title-small {
     font-size: 14px;
@@ -44,6 +47,35 @@ i {
         display: none;
     }
 }
+.row {
+    margin: 0;
+}
+.card {
+        width: 291px;
+        margin: 40px 0;
+        .row {
+            .card-image {
+                padding: 0;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .card-description {
+                background-color: $color-one;
+                .title, .title-small {
+                    margin: 0;
+                    padding: 20px 0 5px 0;
+            }
+                .sub-title, .sub-title-small {
+                    margin: 0;
+                    padding: 5px 0 20px 0;
+            }
+        }
+    }
+}
+
 /*Header*/
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
@@ -57,6 +89,7 @@ header {
         color: $color-one;
         font-size: 40px;
         letter-spacing: 3px;
+        margin-top: 80px;
     }
     .second-header {
         font-family: $font-two;
@@ -113,4 +146,8 @@ header {
             }
         }
     }
+}
+/* Portfolio */
+.portfolio {
+    background-color: #f7f7f7;
 }

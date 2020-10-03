@@ -15,6 +15,7 @@ a {
   font-weight: 700;
   color: #222222;
   font-size: 40px;
+  margin-top: 60px;
 }
 
 .sub-title {
@@ -22,10 +23,12 @@ a {
   color: #777777;
   font-size: 16px;
   letter-spacing: 4px;
+  margin-bottom: 60px;
 }
 
 .title-small {
   font-size: 18px;
+  margin-top: 30px;
 }
 
 .sub-title-small {
@@ -44,6 +47,39 @@ i p {
   display: none;
 }
 
+.row {
+  margin: 0;
+}
+
+.card {
+  width: 291px;
+  margin: 40px 0;
+}
+
+.card .row .card-image {
+  padding: 0;
+}
+
+.card .row .card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .row .card-description {
+  background-color: #ffffff;
+}
+
+.card .row .card-description .title, .card .row .card-description .title-small {
+  margin: 0;
+  padding: 20px 0 5px 0;
+}
+
+.card .row .card-description .sub-title, .card .row .card-description .sub-title-small {
+  margin: 0;
+  padding: 5px 0 20px 0;
+}
+
 /*Header*/
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
@@ -59,6 +95,7 @@ header .first-header {
   color: #ffffff;
   font-size: 40px;
   letter-spacing: 3px;
+  margin-top: 80px;
 }
 
 header .second-header {
@@ -122,5 +159,10 @@ header .row .menu ul li {
 header .row .menu ul li a {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=style.css.map */
