@@ -210,4 +210,114 @@ footer .row .copyright {
   font-size: 14px;
   font-weight: 400;
 }
+
+/* media */
+@media (min-width: 300px) and (max-width: 911px) {
+  header {
+    height: 550px;
+  }
+  header .first-header {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+  }
+  header .second-header {
+    font-size: 50px;
+  }
+  header .row {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  header .row .logo h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  header .row .menu {
+    margin-top: 10px;
+  }
+  header .row .menu ul {
+    padding: 0;
+  }
+  header .row .menu ul li {
+    margin-right: 5px;
+    font-size: 11px;
+  }
+  .portfolio {
+    padding: 5px 0;
+  }
+  .portfolio .card {
+    margin-bottom: 10px;
+    transform: scale(1.05);
+  }
+  footer .container .row .social-media {
+    -ms-flex-order: 1;
+        order: 1;
+    margin-top: 10px;
+  }
+  footer .container .row .social-media ul {
+    white-space: nowrap;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  footer .container .row .copyright {
+    -ms-flex-order: 2;
+        order: 2;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 760px) and (orientation: landscape) {
+  Header {
+    height: 460px;
+  }
+  Header .row {
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .portfolio .card {
+    margin-bottom: 15px;
+    transform: scale(1);
+    -ms-flex: 50%;
+        flex: 50%;
+  }
+  .title {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 767px) {
+  header .row {
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .portfolio .card:nth-of-type(4) .title-small {
+    font-size: 16px;
+  }
+  .portfolio .card:nth-of-type(5) .title-small {
+    font-size: 16px;
+  }
+  .portfolio .card:nth-of-type(6) .title-small {
+    font-size: 16px;
+  }
+  footer .container .row .copyright {
+    -ms-flex-order: 1;
+        order: 1;
+    white-space: normal;
+  }
+  footer .container .row .social-media {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+}
+
+@media (min-width: 767px) and (orientation: landscape) {
+  header .row {
+    -ms-flex-align: unset;
+        align-items: unset;
+  }
+}
 /*# sourceMappingURL=style.css.map */
